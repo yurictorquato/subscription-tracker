@@ -1,0 +1,3 @@
+process.loadEnvFile(`.env.${process.env.NODE_ENV || "development"}.local`);
+
+export const { PORT, NODE_ENV } = process.env;
